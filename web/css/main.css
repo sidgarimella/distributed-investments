@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+
+body {
+  padding-top: 54px;
+  font-family: 'Barlow', sans-serif;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.tabula {
+  margin: 5px;
+  padding: 6px;
+  background: #495057;
+  color: white;
+  font-size: 14px;
+}
+
+.tabula:hover {
+  margin: 5px;
+  padding: 6px;
+  background: #495057b5;
+  color: white;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.tabula-prime{
+    margin: 5px;
+    padding: 14px;
+    background: #495057;
+    font-weight: bolder;
+    color: white;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.tabula-prime:hover {
+    margin: 5px;
+    padding: 14px;
+    background: #495057b5;
+    font-weight: bolder;
+    color: white;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.tab-content {
+  margin-left: 6px;
+  margin-top: 40px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
+}
+
+.ui.modal {
+  margin-top: -15%;
+  margin-bottom: 15%;
+  padding: 30px;
+}
+
+#cco {
+  margin-bottom:30px;
+  margin-left:-30px;
+}
+
+#infoco {
+  margin-bottom:30px;
+}
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after {
+   padding: 5px;
+}
+.dataTables_wrapper .mdb-select {
+    border: none;
+}
+.dataTables_wrapper .mdb-select.form-control {
+    padding-top: 0;
+    margin-top: -1rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    width: 100px;
+}
+.dataTables_length label {
+    display: flex;
+    justify-content: left;
+}
+.dataTables_filter label {
+    margin-bottom: 0;
+}
+.dataTables_filter label input.form-control {
+    margin-top: -0.6rem;
+    padding-bottom: 0;
+}
+table.dataTable {
+    margin-bottom: 3rem!important;
+}

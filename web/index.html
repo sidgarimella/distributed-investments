@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Distributed Investments</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
+
+    <!-- Custom styles for this template -->
+    <link href="css/modal.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/web3.js"></script>
+    <script src="script/web3.js"></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+
+
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Distributed Investment Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="finprof.html">Request a Loan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assets.html">My Assets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pending.html">Pending Loans</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="landing">
+      <div class="row">
+        <div class="col-lg-12 text-left" style="margin-top:20%;">
+          <h1 class="mt-5" style="margin-bottom:50px;font-size:472%!important;" id="mainPhrase">New opportunities await.</h1>
+          <div id="mainPage">
+          <p class="lead"></p>
+
+          <ul class="nav nav-tabs" style="margin-bottom:10px;">
+            <li><a class="tabula-prime" data-toggle="tab" href="#menu">Request a Loan</a></li>
+            <li><a class="tabula-prime" data-toggle="tab" href="#menu1">Invest</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="menu" class="tab-pane fade in active">
+              <div class="form-group">
+                    <label for="mhp">Approximate amount requested ($10,000-$1,000,000): </label>
+                    <div class="input-group" style="width:50%;">
+                      <input type="text" class="form-control" id="requestAmount" style="margin-bottom:10px;width:50%;" placeholder="Amount to Request (USD)">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button" id="go">Go</button>
+                      </span>
+                    </div>
+                    <div class="input-group"style="width:50%;">
+                      <input type="text" class="form-control" id="ethAddress" aria-describedby="ethAddress" placeholder="Your etherium address">
+                    </div>
+              </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <div class="form-group">
+                    <label for="mhp">Investment Budget ($1,000 or above): </label>
+                    <div class="input-group" style="margin-bottom:10px;width:50%;">
+                      <input type="text" class="form-control" id="investAmount" placeholder="Amount to Invest (USD)">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button" id="explore">Explore</button>
+                      </span>
+                    </div>
+                    <div class="input-group"style="width:50%;">
+                      <input type="text" class="form-control" id="ethAddress" aria-describedby="ethAddress" placeholder="Your etherium address">
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center" style="margin-top:17%;">
+          <svg id="mini-loader" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 500.00001 500.00001">
+            <g>
+              <path id="b0" d="M66.734 66.734v366.533h366.532V66.734H66.734zm15 15h336.532v336.533H81.734V81.734z">
+              </path>
+              <path id="b2" d="M354.16 2.5v143.34H497.5V2.5H354.16zm10 10H487.5v123.34H364.16V12.5z">
+              </path>
+              <path id="b1" d="M0 2.5v143.34h143.34V2.5H0zm10 10h123.34v123.34H10V12.5z">
+              </path>
+              <path id="b3" d="M354.16 356.66V500H497.5V356.66H354.16zm10 10H487.5V490H364.16V366.66z">
+              </path>
+              <path id="b4" d="M0 356.66V500h143.34V356.66H0zm10 10h123.34V490H10V366.66z">
+              </path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  -->
+    <div class="container" id="tableCloth">
+      <h1 class="mt-5" style="font-size:472%!important;margin-top: 7% !important;margin-bottom: 5%;" id="mainPhrase">Returns or your money back.</h1>
+      <div class="row">
+        <div class="col-lg-12 text-center" style="">
+          <table id="queryResults" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead style="width:100%;">
+                <tr>
+                    <th>Total Loan Amount</th>
+                    <th>Property</th>
+                    <th>Contract</th>
+                    <th>Request Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui modal">
+
+        <i class="close icon"></i>
+        <div id="cco" class="header">
+          Fund Contract
+        </div>
+
+          <div id="infoco" class="description">
+            A description can appear on the right
+          </div>
+
+          <label for="mhp">Payment Confirmation: </label>
+          <div class="input-group" style="margin-bottom:10px;width:50%;">
+            <input type="text" class="form-control" id="investAmount" placeholder="Amount to Invest (USD)">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button" id="fund">Fund</button>
+            </span>
+          </div>
+          <div class="input-group"style="width:50%;">
+            <input type="text" class="form-control" id="ethAddress" aria-describedby="ethAddress" placeholder="Your etherium address">
+          </div>
+
+          <div class="form-check" style="margin-bottom:10px;margin-top:30px;">
+            <input type="checkbox" class="form-check-input" id="truth">
+            <label class="form-check-label" for="truth">By clicking this box, you confirm that you agree by electronic signature to allow the confirmation of [a bunch of important documents].</label>
+          </div>
+
+
+
+    </div>
+
+
+    </div>
+
+</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/finprof.js"></script>
+  </body>
+
+</html>
